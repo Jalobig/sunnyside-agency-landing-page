@@ -1,0 +1,90 @@
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem);
+    transform-origin: top center;
+  }
+  70% {
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.navbar {
+  padding: 2.8125rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--default-font);
+  @media only screen and (max-width: 700px) {
+    position: relative;
+  }
+  @media only screen and (max-width: 478px) {
+    padding: 1rem;
+      
+  }
+  &__logo {
+    height: 2rem;
+    @media only screen and (max-width: 478px) {
+      height: 1.3rem;
+      
+    }
+  }
+  &__nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    @media only screen and (max-width: 700px) {
+      animation: bounce-in 0.3s backwards;
+      position: absolute;
+      top: 7rem;
+      left: 5%;
+      width: 90%;
+      z-index: 1000;
+      background-color: var(--color-white);
+      flex-direction: column;
+      clip-path: polygon(0 10%, 95% 10%, 100% 0%, 100% 100%, 0% 100%);
+      padding-inline-start: 0;
+    }
+    @media only screen and (max-width: 478px) {
+      top: 3rem;
+      clip-path: polygon(0 5%, 90% 5%, 100% 0%, 100% 100%, 0% 100%);
+      
+    }
+    &--item {
+      font-size: 0.9rem;
+      color: var(--color-white);
+      transition: all 0.3s;
+      @media only screen and (max-width: 700px) {
+        color: var(--color-grey-darker);
+        font-size: 1.5rem;
+        margin-top: 3.5rem;
+        &:first-child {
+          margin-top: 5.5rem;
+        }
+      }
+      &:not(:last-child) {
+        margin-right: 3.5rem;
+        border-bottom: 2px solid transparent;
+        @media only screen and (max-width: 700px) {
+          margin-right: unset;
+        }
+        &:hover {
+          border-bottom: 2px solid var(--color-secondary);
+        }
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  &__menu {
+    transition: all .3s;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+    }
+  }
+}

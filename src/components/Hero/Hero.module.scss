@@ -1,0 +1,33 @@
+@keyframes arrow-animation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1.5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.hero {
+  text-align: center;
+  margin-top: 3.4375rem;
+  &__heading {
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: var(--color-white);
+    @media only screen and (max-width: 478px) {
+      font-size: 2rem;
+      
+    }
+  }
+  &__arrow {
+    animation: arrow-animation 1s infinite;
+    margin-top: 6vw;
+    @media only screen and (max-width: 478px) {
+      margin-top: 19vw;
+      
+    }
+  }
+}

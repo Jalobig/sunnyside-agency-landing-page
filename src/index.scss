@@ -1,0 +1,36 @@
+:root {
+  // // Colors
+
+  /// Primary
+
+  --color-primary: hsl(7, 99%, 70%);
+  --color-secondary: hsl(51, 100%, 49%);
+  --color-graphic-text: hsl(167, 40%, 24%);
+  --color-photo-text: hsl(198, 62%, 26%);
+  --color-footer-text: hsl(168, 34%, 41%);
+  --color-footer-bg: hsla(168, 34%, 41%, 0.5);
+
+  /// Neutral
+
+  --color-grey-darker: hsl(212, 27%, 19%);
+  --color-grey-dark: hsl(213, 9%, 39%);
+  --color-grey: hsl(232, 10%, 55%);
+  --color-grey-light: hsl(210, 4%, 67%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-transparent: hsla(0, 0%, 100%, 0.393);
+
+  // // Fonts
+  --default-font: "Barlow", sans-serif;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+font-family: 'Fraunces', serif;
+overflow-x: hidden;
+}

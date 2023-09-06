@@ -1,0 +1,44 @@
+.footer{
+  background-color: var(--color-footer-bg);
+  color: var(--color-footer-text);
+  text-align: center;
+  &__logo{
+    margin: 3rem auto 2rem;
+    filter: invert(48%) sepia(15%) saturate(1136%) hue-rotate(118deg) brightness(86%) contrast(86%);
+  }
+  &__nav{
+    max-width: 18.75rem;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    margin: auto;
+    margin-bottom: 4rem;
+    transition: all .3s;
+    &-item{
+      &:hover{
+        filter: invert(0%) sepia(0%) saturate(1000%) hue-rotate(105deg) brightness(106%) contrast(3004%);
+        cursor: pointer;
+      }
+    }
+  }
+  &__social{
+    width: 10rem;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+  }
+  &__icon{
+    &:hover{
+      filter: invert(0%) sepia(0%) saturate(1000%) hue-rotate(105deg) brightness(106%) contrast(3004%);
+      cursor: pointer;
+    }
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

@@ -1,0 +1,58 @@
+.testimonials{
+    text-align: center;
+    margin: 10rem auto;
+    max-width: 69.375rem;
+    &__heading{
+        text-transform: uppercase;
+        color: var(--color-grey-light);
+        font-size: 1rem;
+        letter-spacing: 5px;
+        @media only screen and (max-width: 478px) {
+            letter-spacing: 4px;
+      
+        }
+    }
+    &__row{
+        margin-top: 5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__testimonial{
+        &:not(:last-child){
+            margin-right: 1rem;
+        }
+        margin-bottom: 5rem;
+    }
+    &__avatar{
+        width: 4.375rem;
+        height: 4.375rem;
+        border-radius: 5rem;
+        margin-bottom: 3.75rem;
+        @media only screen and (max-width: 478px) {
+            margin-bottom: 1.75rem;
+      
+        }
+    }
+    &__text{
+        max-width: 20.625rem;
+        color: var(--color-grey);
+        line-height: 2;
+        font-size: .93rem;
+        margin-bottom: 5rem;
+        @media only screen and (max-width: 478px) {
+            max-width: 90%;
+            margin: 0 auto 2rem;
+            
+        }
+    }
+    &__name{
+        font-size: 1rem;
+        margin-bottom: .7rem;
+        
+    }
+    &__title{
+        font-size: .7rem;
+        color: var(--color-grey-light);
+    }
+}

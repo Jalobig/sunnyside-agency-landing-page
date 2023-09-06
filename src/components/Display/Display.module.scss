@@ -1,0 +1,8 @@
+.display{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10.5rem, 1fr));
+    justify-content: center;
+    &__img{
+        width: 100%;
+    }
+}
